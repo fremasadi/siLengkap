@@ -1,0 +1,380 @@
+[
+  {
+    "question": "One child becomes the dragon's head, the other children become the dragon's body, the last child becomes the dragon's tail. The game is...",
+    "options": [
+      {
+        "text": "Monkey",
+        "imageUrl": ""
+      },
+      {
+        "text": "Chicken",
+        "imageUrl": ""
+      },
+      {
+        "text": "Duck",
+        "imageUrl": ""
+      },
+      {
+        "text": "Goat",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cow",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Chicken",
+    "imageUrl": ""
+  },
+  {
+    "question": "What are the two elephants doing in this picture?",
+    "options": [
+      {
+        "text": "Dance",
+        "imageUrl": ""
+      },
+      {
+        "text": "Swim",
+        "imageUrl": ""
+      },
+      {
+        "text": "Run",
+        "imageUrl": ""
+      },
+      {
+        "text": "Study",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cook",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Run",
+    "imageUrl": "assets/images/gajah.jpeg"
+  },
+  {
+    "question": "Where is the picture of an ant?",
+    "options": [
+      {
+        "text": "",
+        "imageUrl": "assets/images/kambing.jpeg"
+      },
+      {
+        "text": "",
+        "imageUrl": "assets/images/kucing.jpeg"
+      },
+      {
+        "text": "",
+        "imageUrl": "assets/images/semut.jpeg"
+      },
+      {
+        "text": "",
+        "imageUrl": "assets/images/babi.jpeg"
+      },
+      {
+        "text": "",
+        "imageUrl": "assets/images/sapi.jpeg"
+      }
+    ],
+    "correctAnswer": "ant",
+    "imageUrl": ""
+  },
+  {
+    "question": "What is the capital city of France?",
+    "options": [
+      {
+        "text": "Paris",
+        "imageUrl": ""
+      },
+      {
+        "text": "Berlin",
+        "imageUrl": ""
+      },
+      {
+        "text": "London",
+        "imageUrl": ""
+      },
+      {
+        "text": "Madrid",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rome",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Paris",
+    "imageUrl": ""
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      {
+        "text": "Vincent van Gogh",
+        "imageUrl": ""
+      },
+      {
+        "text": "Leonardo da Vinci",
+        "imageUrl": ""
+      },
+      {
+        "text": "Pablo Picasso",
+        "imageUrl": ""
+      },
+      {
+        "text": "Michelangelo",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rembrandt",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Leonardo da Vinci",
+    "imageUrl": ""
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      {
+        "text": "Earth",
+        "imageUrl": ""
+      },
+      {
+        "text": "Jupiter",
+        "imageUrl": ""
+      },
+      {
+        "text": "Mars",
+        "imageUrl": ""
+      },
+      {
+        "text": "Saturn",
+        "imageUrl": ""
+      },
+      {
+        "text": "Uranus",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Mars",
+    "imageUrl": ""
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      {
+        "text": "Charles Dickens",
+        "imageUrl": ""
+      },
+      {
+        "text": "William Shakespeare",
+        "imageUrl": ""
+      },
+      {
+        "text": "Jane Austen",
+        "imageUrl": ""
+      },
+      {
+        "text": "Emily Bronte",
+        "imageUrl": ""
+      },
+      {
+        "text": "Mark Twain",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "William Shakespeare",
+    "imageUrl": ""
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "options": [
+      {
+        "text": "Atlantic Ocean",
+        "imageUrl": ""
+      },
+      {
+        "text": "Indian Ocean",
+        "imageUrl": ""
+      },
+      {
+        "text": "Arctic Ocean",
+        "imageUrl": ""
+      },
+      {
+        "text": "Pacific Ocean",
+        "imageUrl": ""
+      },
+      {
+        "text": "Southern Ocean",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Pacific Ocean",
+    "imageUrl": ""
+  },
+  {
+    "question": "Who is known as the father of modern physics?",
+    "options": [
+      {
+        "text": "Albert Einstein",
+        "imageUrl": ""
+      },
+      {
+        "text": "Galileo Galilei",
+        "imageUrl": ""
+      },
+      {
+        "text": "Isaac Newton",
+        "imageUrl": ""
+      },
+      {
+        "text": "Niels Bohr",
+        "imageUrl": ""
+      },
+      {
+        "text": "Max Planck",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Galileo Galilei",
+    "imageUrl": ""
+  },
+  {
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "options": [
+      {
+        "text": "Vincent van Gogh",
+        "imageUrl": ""
+      },
+      {
+        "text": "Leonardo da Vinci",
+        "imageUrl": ""
+      },
+      {
+        "text": "Pablo Picasso",
+        "imageUrl": ""
+      },
+      {
+        "text": "Michelangelo",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rembrandt",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Michelangelo",
+    "imageUrl": ""
+  },
+  {
+    "question": "Which country is famous for its tulips?",
+    "options": [
+      {
+        "text": "Germany",
+        "imageUrl": ""
+      },
+      {
+        "text": "Netherlands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Belgium",
+        "imageUrl": ""
+      },
+      {
+        "text": "France",
+        "imageUrl": ""
+      },
+      {
+        "text": "Italy",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Netherlands",
+    "imageUrl": ""
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": [
+      {
+        "text": "F. Scott Fitzgerald",
+        "imageUrl": ""
+      },
+      {
+        "text": "Ernest Hemingway",
+        "imageUrl": ""
+      },
+      {
+        "text": "Harper Lee",
+        "imageUrl": ""
+      },
+      {
+        "text": "J.D. Salinger",
+        "imageUrl": ""
+      },
+      {
+        "text": "John Steinbeck",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Harper Lee",
+    "imageUrl": ""
+  },
+  {
+    "question": "What is the largest mammal?",
+    "options": [
+      {
+        "text": "Giraffe",
+        "imageUrl": ""
+      },
+      {
+        "text": "Elephant",
+        "imageUrl": ""
+      },
+      {
+        "text": "Blue whale",
+        "imageUrl": ""
+      },
+      {
+        "text": "Hippopotamus",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rhinoceros",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Blue whale",
+    "imageUrl": ""
+  },
+  {
+    "question": "Which planet is closest to the sun?",
+    "options": [
+      {
+        "text": "Venus",
+        "imageUrl": ""
+      },
+      {
+        "text": "Earth",
+        "imageUrl": ""
+      },
+      {
+        "text": "Mercury",
+        "imageUrl": ""
+      },
+      {
+        "text": "Mars",
+        "imageUrl": ""
+      },
+      {
+        "text": "Jupiter",
+        "imageUrl": ""
+      }
+    ],
+    "correctAnswer": "Mercury",
+    "imageUrl": ""
+  }
+]
