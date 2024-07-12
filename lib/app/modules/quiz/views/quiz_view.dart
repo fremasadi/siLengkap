@@ -107,8 +107,8 @@ class QuizView extends GetView<QuizController> {
                         padding: const EdgeInsets.all(16.0),
                         child: Image.asset(
                           question.imageUrl,
-                          width: 100.w,
-                          height: 100.h,
+                          width: 254.w,
+                          height: 120.h,
                         ),
                       ),
                     Padding(
