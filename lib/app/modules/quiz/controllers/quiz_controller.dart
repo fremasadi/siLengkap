@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import '../../../data/models/question_model.dart';
 import '../../../data/service/question_service.dart';
@@ -57,8 +58,7 @@ class QuizController extends GetxController {
   }
 
   void selectImageAnswer(int index, Option option) {
-    // Hanya izinkan satu jawaban gambar pada satu waktu
-    answers.value = List<Option?>.filled(questions.length, null);
+    // Update only the selected answer without resetting the entire list
     answers[index] = option;
     calculateResults();
   }
@@ -76,7 +76,11 @@ class QuizController extends GetxController {
         correctAnswers.value++;
       }
     }
-    print('Correct answers: ${correctAnswers.value}');
-    print('Total questions: ${questions.length}');
+    if (kDebugMode) {
+      print('Correct answers: ${correctAnswers.value}');
+    }
+    if (kDebugMode) {
+      print('Total questions: ${questions.length}');
+    }
   }
 }
