@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:silengkap/app/modules/quiz/views/results_view.dart';
+import '../../../data/models/question_model.dart';
 import '../controllers/quiz_controller.dart';
 
 class IndicatorView extends GetView<QuizController> {
@@ -21,20 +23,39 @@ class IndicatorView extends GetView<QuizController> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 70.0),
-                  child: Text(
-                    'Review Soal',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.sp,
-                    ),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 50, horizontal: 35.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          Get.back();
+                        },
+                        icon: Icon(
+                          Icons.arrow_back_ios,
+                          color: Colors.white,
+                          size: 24.sp,
+                        ),
+                      ),
+                      Text(
+                        'Review Soal',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22.sp,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 40.w,
+                      )
+                    ],
                   ),
                 ),
               ],
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(top: 150),
+            margin: const EdgeInsets.only(top: 130),
             height: context.height,
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -53,39 +74,41 @@ class IndicatorView extends GetView<QuizController> {
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Column(
-                      children: const [
-                        Text('00'),
-                        Text('Hours'),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Column(
-                        children: const [
-                          Text('00'),
-                          Text('Minutes'),
+                Obx(() {
+                  return Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        children: [
+                          Text(controller.elapsedHours.value),
+                          const Text('Hours'),
                         ],
                       ),
-                    ),
-                    Column(
-                      children: const [
-                        Text('00'),
-                        Text('Second'),
-                      ],
-                    )
-                  ],
-                ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Column(
+                          children: [
+                            Text(controller.elapsedMinutes.value),
+                            const Text('Minutes'),
+                          ],
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          Text(controller.elapsedSeconds.value),
+                          const Text('Seconds'),
+                        ],
+                      ),
+                    ],
+                  );
+                }),
                 SizedBox(
                   height: 19.h,
                 ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 70.0),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 70.0),
                   child: Divider(
-                    height: 2,
+                    height: 2.h,
                     color: Colors.grey,
                   ),
                 ),
@@ -148,9 +171,14 @@ class IndicatorView extends GetView<QuizController> {
                             },
                             child: Container(
                               margin: const EdgeInsets.all(4),
-                              color: controller.answers[index] == null
-                                  ? Colors.orangeAccent
-                                  : Colors.green,
+                              decoration: BoxDecoration(
+                                color: controller.answers[index] == null
+                                    ? const Color(0xffE3A70C)
+                                    : const Color(0xff099752),
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(14),
+                                ),
+                              ),
                               child: Center(
                                 child: Text((index + 1).toString()),
                               ),
@@ -161,6 +189,49 @@ class IndicatorView extends GetView<QuizController> {
                     );
                   }),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 27.0, right: 27.0, bottom: 31.0),
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Container(
+                      height: 40.h,
+                      width: context.width,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff0496FF),
+                        borderRadius: BorderRadius.circular(50.0),
+                      ),
+                      child: TextButton(
+                        onPressed: () {
+                          bool allAnswered = true;
+                          for (Option? answer in controller.answers) {
+                            if (answer == null) {
+                              allAnswered = false;
+                              break;
+                            }
+                          }
+                          if (allAnswered) {
+                            Get.to(const ResultsView());
+                          } else {
+                            Get.snackbar(
+                              'Tunggu',
+                              'Selesaikan Semua Soal Terlebih Dahulu.',
+                              snackPosition: SnackPosition.TOP,
+                              duration: const Duration(seconds: 3),
+                            );
+                          }
+                        },
+                        child: Text(
+                          'Submit Test',
+                          style: TextStyle(
+                            fontSize: 16.sp,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),

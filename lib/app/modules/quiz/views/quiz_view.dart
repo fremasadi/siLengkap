@@ -20,7 +20,7 @@ class QuizView extends GetView<QuizController> {
           children: [
             Container(
               width: context.width,
-              height: context.height,
+              height: context.height * .5,
               color: const Color(0xff00BFFF),
               child: Column(
                 children: [
