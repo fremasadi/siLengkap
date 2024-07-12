@@ -58,7 +58,6 @@ class QuizController extends GetxController {
   }
 
   void selectImageAnswer(int index, Option option) {
-    // Update only the selected answer without resetting the entire list
     answers[index] = option;
     calculateResults();
   }
