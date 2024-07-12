@@ -39,7 +39,6 @@ class QuizView extends GetView<QuizController> {
             ),
             Container(
               margin: const EdgeInsets.only(top: 150),
-              height: context.height,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.vertical(
@@ -116,7 +115,7 @@ class QuizView extends GetView<QuizController> {
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
                         question.question,
-                        style: const TextStyle(fontSize: 18),
+                        style: TextStyle(fontSize: 18.sp),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -150,8 +149,9 @@ class QuizView extends GetView<QuizController> {
                                     padding: const EdgeInsets.only(right: 8.0),
                                     child: Image.asset(
                                       option.imageUrl,
-                                      width: 80.w,
-                                      height: 60.h,
+                                      width: 150.w,
+                                      height: 100.h,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 Expanded(
@@ -243,20 +243,20 @@ class QuizView extends GetView<QuizController> {
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  Icon(
+                                children: [
+                                  const Icon(
                                     Icons.menu_book_outlined,
                                     color: Colors.white,
                                   ),
                                   SizedBox(
-                                    width: 5,
+                                    width: 5.w,
                                   ),
                                   Text(
                                     'Question',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 14,
+                                      fontSize: 14.sp,
                                     ),
                                   ),
                                 ],
@@ -307,6 +307,9 @@ class QuizView extends GetView<QuizController> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 30.h,
+                    )
                   ],
                 );
               }),
