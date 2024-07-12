@@ -13,19 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812), // Sesuaikan dengan ukuran desain Anda
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       builder: (context, child) {
         return GetMaterialApp(
           title: "Application",
+          debugShowCheckedModeBanner: false,
           initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
-          builder: (context, widget) {
-            return MediaQuery(
-              data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-              child: widget!,
-            );
-          },
         );
       },
     );
