@@ -102,7 +102,7 @@ class IndicatorView extends GetView<QuizController> {
                         width: 12.w,
                       ),
                       Text(
-                        'answers',
+                        'Answers',
                         style: TextStyle(
                             fontSize: 14.sp, color: const Color(0xff099752)),
                       )
