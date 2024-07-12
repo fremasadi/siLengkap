@@ -150,7 +150,7 @@ class QuizView extends GetView<QuizController> {
                                     child: Image.asset(
                                       option.imageUrl,
                                       width: 150.w,
-                                      height: 100.h,
+                                      height: 150.h,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -173,7 +173,7 @@ class QuizView extends GetView<QuizController> {
                               : null,
                           child: Container(
                             height: 30.h,
-                            width: 30.h,
+                            width: 30.w,
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.black),
                                 borderRadius: BorderRadius.circular(5)),

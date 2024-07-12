@@ -25,7 +25,8 @@ class ResultsView extends GetView<QuizController> {
                 child: Text(
                   'Hasil Ujian',
                   style: TextStyle(
-                    fontSize: 14.sp,
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                 ),

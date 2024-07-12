@@ -74,6 +74,10 @@ class QuizController extends GetxController {
           questions[i].correctAnswer.toLowerCase()) {
         correctAnswers.value++;
       }
+      if (answers[i]?.text.toLowerCase() ==
+          questions[i].imageUrl.toLowerCase()) {
+        correctAnswers.value++;
+      }
     }
     if (kDebugMode) {
       print('Correct answers: ${correctAnswers.value}');
