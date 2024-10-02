@@ -1,16 +1,10 @@
-# silengkap
+# Proyek Latihan Quiz
 
-A new Flutter project.
+Proyek ini adalah aplikasi sederhana untuk menjawab quiz. Pengguna dapat memilih jawaban dari beberapa pilihan yang tersedia dan mendapatkan nilai berdasarkan jawaban yang benar. Aplikasi ini menggunakan data dummy untuk soal-soal quiz.
 
-## Getting Started
+## Fitur
 
-This project is a starting point for a Flutter application.
+- **Menjawab Quiz**: Pengguna dapat menjawab berbagai pertanyaan dari kategori yang tersedia.
+- **Nilai Akhir**: Setelah menjawab semua pertanyaan, pengguna akan menerima nilai akhir berdasarkan jawaban yang diberikan.
+- **Data Dummy**: Soal-soal menggunakan data dummy untuk keperluan pengujian dan demonstrasi.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
